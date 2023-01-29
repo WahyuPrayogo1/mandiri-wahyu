@@ -2,13 +2,7 @@
 #include<stdio.h>
 using namespace std;
 
-
-
-    int saldoAwal = 1000000;
-    int dana = 10000;
-    int ovo = 10000;
-    int gopay = 10000;
-
+    int saldoAwal = 1000000, dana = 10000, ovo = 10000, gopay = 10000;
 
     int cekKartu(int nominal = 1000, int opsi = 1, string opsiTopUp = "0"){
        
@@ -21,7 +15,7 @@ using namespace std;
 
         kartu.pinAtm = 123456;
             do{
-                    cout <<"Masukan PIN :";
+                    cout <<"Masukan PIN anda :";
                     cin >>cekPin;
                     if(kartu.pinAtm == cekPin){
                         // cout <<"bisa dong " << opsi;
@@ -79,7 +73,6 @@ void login(){
         cek = "berhasil";
         }else{
              cout << "Password Salah! ("<<i<<"x)\n";
-             
               i = i +1;
         }
     }while(i <= 4);
